@@ -1,0 +1,4 @@
+.gradle
+natjgen.cli.tool/build
+org.moe.mdt.natjgen/build
+org.moe.mdt.natjgen/logs
