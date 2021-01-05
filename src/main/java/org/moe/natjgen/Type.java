@@ -972,6 +972,11 @@ public class Type {
         }
     }
 
+    public Type(int kind, String elementName) {
+        this.kind = kind;
+        this.elementName = elementName;
+    }
+
     /**
      * Create a new int type
      *
@@ -1651,6 +1656,13 @@ public class Type {
 
     public ArrayList<Type> getObjCTypeArgs() {
         return typeArgs;
+    }
+
+    public void setTypeArgs(ArrayList<Type> typeArgs) {
+        if (typeArgs == null) {
+            throw new NullPointerException();
+        }
+        this.typeArgs = typeArgs;
     }
 
     public static class ObjCProtocolGenerationState {
